@@ -6,3 +6,27 @@ html,
 body {
     background-color: #4D4D4D;
 }
+
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 1.3rem;
+}
+
+.header,
+.calculator__frame,
+.footer {
+    display: flex;
+    flex: 1;
+}
+
+.calculator__frame {
+    flex-direction: column;
+    
+}
+
+.screen {
+    background-color: #0F0E12;
+    height: 5rem;
+    width: 15rem;
+}
