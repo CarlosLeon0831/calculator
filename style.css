@@ -49,11 +49,6 @@ button {
   font-size: 14px;
 }
 
-.grayButton {
-  background-color: #4D4D4D;
-  color: #e5e5e5;
-}
-
 main {
   padding: 5rem;
   display: flex;
@@ -103,10 +98,32 @@ footer {
   border-radius: 3px;
 }
 
+/* BUTTONS */
 .button__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin: 0.2rem;
   margin-top: 1rem;
+}
+
+.grayButton {
+  background-color: #b2b2b2;
+  color: #e5e5e5;
+}
+
+.divi {
+  color: #7832B4;
+}
+
+.add {
+  color: #F05A24;
+}
+
+.subs {
+  color: #23AEFF;
+}
+
+.mult {
+  color: #17B453;
 }
