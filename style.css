@@ -10,22 +10,24 @@
   margin: 0;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-}
-
 body {
-  padding: 0;
-  margin: 0;
   color: #e5e5e5;
   font-family: Helvetica, sans-serif;
 }
 
 html,
 body {
-  background-color: #4d4d4d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #7f7f7f;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
 }
 
 header {
@@ -43,13 +45,15 @@ button {
   border-radius: 50px;
   padding: 1rem;
   background: #e5e5e5;
-  color: #7F7F7F;
+  color: #7f7f7f;
   box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #fafafa;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
 }
 
 main {
+  flex-grow: 1;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -59,8 +63,7 @@ main {
 
 footer {
   margin-top: auto;
-  bottom: 0px;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,16 +80,17 @@ footer {
 .calculator__frame {
   flex-direction: column;
   background-color: #e5e5e5;
-  height: 30rem;
-  width: 18rem;
+  max-height: 467.19px;
+  width: 300px;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
   padding: 1rem;
+  box-shadow: 13px 13px 49px #717171, -13px -13px 49px #8d8d8d;
 }
 
 .brand {
-  color: #7F7F7F;
+  color: #7f7f7f;
   padding-bottom: 0.5rem;
 }
 
@@ -107,23 +111,51 @@ footer {
   margin-top: 1rem;
 }
 
-.grayButton {
+.grayButton:hover {
   background-color: #b2b2b2;
   color: #e5e5e5;
 }
 
 .divi {
-  color: #7832B4;
+  color: #7832b4;
+}
+.divi:hover {
+  background-color: #7832b4;
+  color: #e5e5e5;
 }
 
 .add {
-  color: #F05A24;
+  color: #f05a24;
 }
-
+.add:hover {
+  background-color: #f05a24;
+  color: #e5e5e5;
+}
 .subs {
-  color: #23AEFF;
+  color: #23aeff;
+}
+.subs:hover {
+  background-color: #23aeff;
+  color: #e5e5e5;
 }
 
 .mult {
-  color: #17B453;
+  color: #17b453;
+}
+.mult:hover {
+  background-color: #17b453;
+  color: #e5e5e5;
+}
+
+.equals {
+  grid-column: 3 / 5;
+  border-radius: 2.5rem;
+}
+.equals:hover {
+  background-color: #FF9637;
+  color: #e5e5e5;
+}
+
+.footer {
+  margin-top: auto;
 }
