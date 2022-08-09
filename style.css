@@ -105,12 +105,18 @@ footer {
 .screen__content {
   text-align: right;
 }
+.screen__result {
+  text-align: right;
+  font-size: 32px;
+  margin-top: 0.2rem;
+}
 
 /* BUTTONS */
 .button__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  width: 100%;
   margin: 0.2rem;
   margin-top: 1rem;
 }

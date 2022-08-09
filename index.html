@@ -10,43 +10,52 @@
   </head>
   <body>
     <header>
-      <div class="header"><h1>+  −</h1></div>
+      <div class="header"><h1>+ −</h1></div>
     </header>
     <main>
       <div class="calculator__frame">
         <div class="brand">calculator</div>
         <div class="screen">
-          <p class="screen__content">0123</p>
+          <p class="screen__content" id="operationScreen">0123</p>
+          <p class="screen__result" id="resultScreen">456</p>
         </div>
         <div class="button__grid">
-          <button class="grayButton">AC</button>
-          <button class="grayButton">C</button>
-          <button class="grayButton">%</button>
-          <button class="divi">÷</button>
+          <button class="grayButton" id="cBtn">C</button>
+          <button class="grayButton" id="posNegBtn">+/-</button>
+          <button class="grayButton" id="percBtn">%</button>
+          <button class="divi" id="diviBtn" data-operator>÷</button>
 
-          <button class="numberBtn">7</button>
-          <button class="numberBtn">8</button>
-          <button class="numberBtn">9</button>
-          <button class="mult">x</button>
+          <button class="numberBtn" data-number>7</button>
+          <button class="numberBtn" data-number>8</button>
+          <button class="numberBtn" data-number>9</button>
+          <button class="mult" id="multBtn" data-operator>x</button>
 
-          <button class="numberBtn">4</button>
-          <button class="numberBtn">5</button>
-          <button class="numberBtn">6</button>
-          <button class="subs">−</button>
+          <button class="numberBtn" data-number>4</button>
+          <button class="numberBtn" data-number>5</button>
+          <button class="numberBtn" data-number>6</button>
+          <button class="subs" id="subsBtn" data-operator>−</button>
 
-          <button class="numberBtn">1</button>
-          <button class="numberBtn">2</button>
-          <button class="numberBtn">3</button>
-          <button class="add">+</button>
+          <button class="numberBtn" data-number>1</button>
+          <button class="numberBtn" data-number>2</button>
+          <button class="numberBtn" data-number>3</button>
+          <button class="add" id="addBtn" data-operator>+</button>
 
-          <button class="numberBtn">0</button>
+          <button class="numberBtn" data-number>0</button>
           <button class="grayButton">.</button>
-          <button class="equals">=</button>
+          <button class="equals" id="equalsBtn">=</button>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer"><p>Copyright &copy; 2022, <strong>Carlos R. Leon</strong></p></div>
+      <div class="footer">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <strong>Carlos R. Leon</strong>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
