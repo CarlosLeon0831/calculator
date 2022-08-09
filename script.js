@@ -1,3 +1,4 @@
+// Basic math operators
 const add = function (x, y) {
   return x + y;
 };
@@ -13,3 +14,8 @@ const multiply = function (x, y) {
 const divide = function (x, y) {
   return x / y;
 };
+
+// Operate function
+const operate = function (operator, x, y) {
+  if
+}

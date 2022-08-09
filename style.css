@@ -102,6 +102,10 @@ footer {
   border-radius: 3px;
 }
 
+.screen__content {
+  text-align: right;
+}
+
 /* BUTTONS */
 .button__grid {
   display: grid;
@@ -115,6 +119,15 @@ footer {
   background-color: #b2b2b2;
   color: #e5e5e5;
 }
+.grayButton:active {
+  border-radius: 50%;
+  background: #b2b2b2;
+  box-shadow: inset 5px 5px 12px #898989, inset -5px -5px 12px #dbdbdb;
+}
+
+.numberBtn:active {
+  box-shadow: inset 5px 5px 12px #b0b0b0, inset -5px -5px 12px #ffffff;
+}
 
 .divi {
   color: #7832b4;
@@ -122,6 +135,9 @@ footer {
 .divi:hover {
   background-color: #7832b4;
   color: #e5e5e5;
+}
+.divi:active {
+  box-shadow: inset 5px 5px 12px #5c278b, inset -5px -5px 12px #943edd;
 }
 
 .add {
@@ -131,12 +147,21 @@ footer {
   background-color: #f05a24;
   color: #e5e5e5;
 }
+.add:active {
+  box-shadow: inset 5px 5px 12px #b9451c, inset -5px -5px 12px #ff6f2c;
+}
+
 .subs {
   color: #23aeff;
 }
 .subs:hover {
   background-color: #23aeff;
   color: #e5e5e5;
+}
+.subs:active {
+  background-color: #23aeff;
+  color: #e5e5e5;
+  box-shadow: inset 5px 5px 12px #1b86c4, inset -5px -5px 12px #2bd6ff;
 }
 
 .mult {
@@ -146,14 +171,22 @@ footer {
   background-color: #17b453;
   color: #e5e5e5;
 }
+.mult:active {
+  background-color: #17b453;
+  color: #e5e5e5;
+  box-shadow: inset 5px 5px 12px #128b40, inset -5px -5px 12px #1cdd66;
+}
 
 .equals {
   grid-column: 3 / 5;
   border-radius: 2.5rem;
 }
 .equals:hover {
-  background-color: #FF9637;
+  background-color: #ff9637;
   color: #e5e5e5;
+}
+.equals:active {
+  box-shadow: inset 5px 5px 12px #c4742a, inset -5px -5px 12px #ffb944;
 }
 
 .footer {
